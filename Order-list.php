@@ -41,6 +41,7 @@ class OrderList
     public function add_classes()
     {
         require_once(ORD_LI_DIR . DIRECTORY_SEPARATOR . 'App/Dashboard/Menu.php');
+        require_once(ORD_LI_DIR . DIRECTORY_SEPARATOR . 'App/Order/Complete.php');
     }
 }
 new OrderList();

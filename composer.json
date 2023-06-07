@@ -11,5 +11,7 @@
             "email": "Mirzaie_parsa@protonmail.ch"
         }
     ],
-    "require": {}
+    "require": {
+        "hekmatinasser/verta": "^8.3"
+    }
 }
