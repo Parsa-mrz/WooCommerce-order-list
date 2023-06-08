@@ -25,19 +25,12 @@ class Complete
 
     public function get_complete_order()
     {
-
         $completed_orders = wc_get_orders(array(
             'status' => array('completed'),
             'numberposts' => -1,
             'customer_id' => get_current_user_id(),
         ));
         return $completed_orders;
-
-        // foreach ($completed_orders as $order) {
-        //     $order_number = $order->get_order_number();
-        //     $order_date = $order->get_date_created();
-        //     $order_total = $order->get_total();
-        // };
     }
 }
 new Complete();
