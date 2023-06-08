@@ -19,6 +19,7 @@ class Complete
     public function add_shortcode()
     {
         add_shortcode('complete-view', [$this, 'loadView']);
+        add_shortcode('complete-count', [$this, 'complete_order_count']);
     }
 
     public function get_complete_order()
@@ -30,5 +31,11 @@ class Complete
         ));
         return $completed_orders;
     }
+    public function complete_order_count()
+    {
+        $completed_orders = $this->get_complete_order();
+        return count($completed_orders);
+    }
+
 }
 new Complete();

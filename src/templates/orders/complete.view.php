@@ -1,4 +1,6 @@
 <?php
+do_shortcode( 'complete-count' );
+die();
 foreach ($completed_orders as $order) {
     $order_number = $order->get_order_number();
     $order_date = $order->get_date_created();
