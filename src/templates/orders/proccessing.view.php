@@ -1,5 +1,5 @@
 <?php
-foreach ($completed_orders as $order) {
+foreach ($proccessing_orders as $order) {
     $order_number = $order->get_order_number();
     $order_date = $order->get_date_created();
     $order_total = wc_price($order->get_total());
@@ -11,7 +11,7 @@ foreach ($completed_orders as $order) {
         <div class="card-body mr-custom">
             <div style="display:flex;">
                 <span class="glyphicon glyphicon-ok-circle" style="font-size: 20px;margin-top: 20px;color: green;"></span>
-                <h3 class="card-title complete-title" style="padding-right:10px"><i class="fa fa-check-circle"></i> تحویل شده</h3>
+                <h3 class="card-title proccessing-title" style="padding-right:10px"><i class="fa fa-clock"></i> جاری</h3>
             </div>
             <div class="details-container-custom">
                 <p class="card-title"> تاریخ : <?= $formatted_date ?></p>
@@ -41,14 +41,13 @@ foreach ($completed_orders as $order) {
         </div>
     </div>
 <?php
-}
-if (!$completed_orders) { ?>
+if (!$proccessing_orders) { ?>
     <div class="card card-container-custom custom-font empty">
         <div class="card-body mr-custom">
-            <img src ='<?= ORD_LI_URL . 'src/icons/order-empty.svg' ?>'>
-            <h1>شما سفارش تکمیل ندارید</h1>
+            <img src='<?= ORD_LI_URL . 'src/icons/order-empty.svg' ?>'>
+            <h1>شما سفارش جاری ندارید</h1>
         </div>
     </div>
-<?php
+    <?php 
 }
-?>
+}

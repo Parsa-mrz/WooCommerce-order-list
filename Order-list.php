@@ -43,6 +43,10 @@ class OrderList
     {
         require_once(ORD_LI_DIR . DIRECTORY_SEPARATOR . 'App/Dashboard/Menu.php');
         require_once(ORD_LI_DIR . DIRECTORY_SEPARATOR . 'App/Order/Complete.php');
+        require_once(ORD_LI_DIR . DIRECTORY_SEPARATOR . 'App/Order/Refunded.php');
+        require_once(ORD_LI_DIR . DIRECTORY_SEPARATOR . 'App/Order/Failed.php');
+        require_once(ORD_LI_DIR . DIRECTORY_SEPARATOR . 'App/Order/Proccessing.php');
+
     }
 
     public function add_style(){

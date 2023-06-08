@@ -2,7 +2,6 @@
 
 namespace App\Order;
 
-use Hekmatinasser\Verta\Facades\Verta;
 
 class Complete
 {
@@ -15,9 +14,8 @@ class Complete
     {
         // pass orders to view 
         $completed_orders = $this->get_complete_order();
-        require_once(ORD_LI_DIR . DIRECTORY_SEPARATOR . '/src/templates/orders/complete.view.php');
+        include_once(ORD_LI_DIR  . '/src/templates/orders/complete.view.php');
     }
-
     public function add_shortcode()
     {
         add_shortcode('complete-view', [$this, 'loadView']);
