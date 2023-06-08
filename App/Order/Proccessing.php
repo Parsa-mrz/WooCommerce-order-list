@@ -17,6 +17,7 @@ class Proccessing{
     public function add_shortcode()
     {
         add_shortcode('proccessing-view', [$this, 'loadView']);
+        add_shortcode('proccessing-count', [$this, 'proccessing_order_count']);
     }
 
     public function get_proeccessing_order()
@@ -27,6 +28,11 @@ class Proccessing{
             'customer_id' => get_current_user_id(),
         ));
         return $proccessing_orders;
+    }
+    public function proccessing_order_count()
+    {
+        $proccessing_orders = $this->get_proeccessing_order();
+        return count($proccessing_orders);
     }
 }
 new Proccessing();

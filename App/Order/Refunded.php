@@ -18,6 +18,7 @@ class Refunded{
     public function add_shortcode()
     {
         add_shortcode('refund-view', [$this, 'loadView']);
+        add_shortcode('refund-count', [$this, 'refund_order_count']);
     }
 
     public function get_refund_order()
@@ -28,6 +29,11 @@ class Refunded{
             'customer_id' => get_current_user_id(),
         ));
         return $refunded_orders;
+    }
+    public function refund_order_count()
+    {
+        $refund_orders = $this->get_refund_order();
+        return count($refund_orders);
     }
 }
 new Refunded();
