@@ -47,7 +47,7 @@ class OrderList
         require_once(ORD_LI_DIR  . 'App/Order/Complete.php');
         require_once(ORD_LI_DIR  . 'App/Order/Refunded.php');
         require_once(ORD_LI_DIR  . 'App/Order/Failed.php');
-        require_once(ORD_LI_DIR  . 'App/Order/processing.php');
+        require_once(ORD_LI_DIR  . 'App/Order/Processing.php');
     }
 
     public function add_style()

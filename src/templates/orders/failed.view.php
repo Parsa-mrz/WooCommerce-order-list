@@ -16,7 +16,7 @@ foreach ($failed_orders as $order) {
             <div class="details-container-custom">
                 <p class="card-title"> تاریخ : <?= $formatted_date ?></p>
                 <p class="card-title"> کد سفارش : <?= $order_number ?></p>
-                <p class="card-title">مبلغ  مرجوعی: <?= $order_total ?></p>
+                <p class="card-title">مبلغ : <?= $order_total ?></p>
             </div>
             <hr>
             <div class='order-image'>

@@ -16,7 +16,7 @@ foreach ($completed_orders as $order) {
             <div class="details-container-custom">
                 <p class="card-title"> تاریخ : <?= $formatted_date ?></p>
                 <p class="card-title"> کد سفارش : <?= $order_number ?></p>
-                <p class="card-title">مبلغ مرجوعی: <?= $order_total ?></p>
+                <p class="card-title">مبلغ : <?= $order_total ?></p>
 
                 <?php if ($order_discount != wc_price('0')) { ?>
                     <p class="card-title"><?php _e('discount', 'wc-order-list') ?><?= $order_discount ?></p>
@@ -46,7 +46,7 @@ if (!$completed_orders) { ?>
     <div class="card card-container-custom custom-font empty">
         <div class="card-body mr-custom">
             <img src='<?= ORD_LI_URL . 'src/icons/order-empty.svg' ?>'>
-            <h1>شما سفارش تکمیل ندارید</h1>
+            <h1>شما سفارش جاری ندارید</h1>
         </div>
     </div>
 <?php
