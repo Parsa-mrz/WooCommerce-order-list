@@ -10,6 +10,8 @@ Text Domain: wc-order-list
 License: GPL2
 Developers => 
           Parsa Mirzaie -> PHP Developer : https://github.com/Parsa-mrz/
+          Masih Balali =>  Frontend Developer : https://github.com/Masih-balali
+
 */
 defined('ABSPATH') || exit;
 class OrderList
@@ -34,11 +36,9 @@ class OrderList
     {
         register_activation_hook(__FILE__, [$this, 'activation']);
         register_deactivation_hook(__FILE__, [$this, 'deactivation']);
-        require_once(ORD_LI_DIR . DIRECTORY_SEPARATOR . 'vendor/autoload.php');
         $this->add_classes();
-        add_action( 'wp_enqueue_scripts', [$this,'add_style'] );
-        add_action( 'admin_enqueue_scripts', [$this,'enqueue_custom_admin_styles'] );
-
+        add_action('wp_enqueue_scripts', [$this, 'add_style']);
+        add_action('admin_enqueue_scripts', [$this, 'enqueue_custom_admin_styles']);
     }
 
     public function add_classes()
@@ -48,15 +48,16 @@ class OrderList
         require_once(ORD_LI_DIR . DIRECTORY_SEPARATOR . 'App/Order/Refunded.php');
         require_once(ORD_LI_DIR . DIRECTORY_SEPARATOR . 'App/Order/Failed.php');
         require_once(ORD_LI_DIR . DIRECTORY_SEPARATOR . 'App/Order/Proccessing.php');
-
     }
 
-    public function add_style(){
-        wp_register_style( 'WC_order_list_style', ORD_LI_URL . 'src/css/style.css');
-        wp_enqueue_style( 'WC_order_list_style' );
+    public function add_style()
+    {
+        wp_register_style('WC_order_list_style', ORD_LI_URL . 'src/css/style.css');
+        wp_enqueue_style('WC_order_list_style');
     }
-    function enqueue_custom_admin_styles() {
-        wp_enqueue_style( 'custom-admin-styles', ORD_LI_URL . 'src/css/admin.css');
-    }    
+    function enqueue_custom_admin_styles()
+    {
+        wp_enqueue_style('custom-admin-styles', ORD_LI_URL . 'src/css/admin.css');
+    }
 }
 new OrderList();
