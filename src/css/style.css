@@ -24,16 +24,17 @@
   margin-left: 6px;
 }
 h3.card-title.complete-title,
-h3.card-title.refund-title,h3.proccessing-title,h3.card-title.canceled-title {
+h3.card-title.refund-title,
+h3.proccessing-title,
+h3.card-title.canceled-title {
   font-size: 18px;
   font-weight: bold;
 }
-.proccessing-title i{
-    color: #5dabed;
+.proccessing-title i {
+  color: #5dabed;
 }
-.canceled-title i{
+.canceled-title i {
   color: #d30d0d;
-
 }
 .complete-title i {
   color: #6bb927;
@@ -89,9 +90,9 @@ h3.card-title.refund-title,h3.proccessing-title,h3.card-title.canceled-title {
   }
 }
 .empty h1 {
-    text-align: center;
-    font-size: 20px;
+  text-align: center;
+  font-size: 20px;
 }
-.empty{
-    text-align: center;
+.empty {
+  text-align: center;
 }

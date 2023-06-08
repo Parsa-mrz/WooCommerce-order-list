@@ -13,8 +13,8 @@ class OrderMenu
     public function add_menu_order()
     {
         add_menu_page(
-            'WC Order List',
-            __('WC Order List', 'wc-order-list'),
+            'لیست سفارشات ووکامرس',
+            'لیست سفارشات ووکامرس',
             'manage_options',
             'order_list',
             [$this, 'wc_order_list_callback'],

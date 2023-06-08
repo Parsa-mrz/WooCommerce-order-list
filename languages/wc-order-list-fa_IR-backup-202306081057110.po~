@@ -1,0 +1,93 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Order List\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-08 10:46+0000\n"
+"PO-Revision-Date: 2023-06-08 10:56+0000\n"
+"Last-Translator: \n"
+"Language-Team: فارسی\n"
+"Language: fa_IR\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.4; wp-6.2.2\n"
+"X-Domain: wc-order-list"
+
+#: src/templates/orders/complete.view.php:19
+msgid " date : "
+msgstr ""
+
+#: src/templates/orders/complete.view.php:20
+msgid " number : "
+msgstr ""
+
+#: src/templates/orders/complete.view.php:21
+msgid " price : "
+msgstr ""
+
+#. URI of the plugin
+msgid "#"
+msgstr ""
+
+#: src/templates/dashboard/menu.view.php:38
+msgid "cancelld orders"
+msgstr ""
+
+#: src/templates/orders/complete.view.php:16
+msgid "complete order"
+msgstr ""
+
+#: src/templates/dashboard/menu.view.php:14
+msgid "completed orders"
+msgstr ""
+
+#: src/templates/dashboard/menu.view.php:6
+msgid "description"
+msgstr ""
+
+#: src/templates/orders/complete.view.php:24
+msgid "discount"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://eskanogroup.ir"
+msgstr ""
+
+#. Name of the plugin
+#: src/templates/dashboard/menu.view.php:2
+msgid "Order List"
+msgstr ""
+
+#. Author of the plugin
+msgid "Parsa Mirzaie"
+msgstr ""
+
+#: src/templates/dashboard/menu.view.php:50
+msgid "processing orders"
+msgstr ""
+
+#: src/templates/dashboard/menu.view.php:26
+msgid "refunded orders"
+msgstr ""
+
+#: src/templates/dashboard/menu.view.php:8
+msgid "shortcode for counter"
+msgstr ""
+
+#: src/templates/dashboard/menu.view.php:7
+msgid "shortcode for form"
+msgstr ""
+
+#: src/templates/orders/complete.view.php:40
+msgid "show factor"
+msgstr ""
+
+#. Description of the plugin
+msgid "This plugin allows you to have own orders list to show"
+msgstr ""
+
+#: App/Dashboard/Menu.php:17
+msgid "WC Order List"
+msgstr ""
