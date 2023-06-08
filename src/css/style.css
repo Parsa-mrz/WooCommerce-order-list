@@ -25,12 +25,12 @@
 }
 h3.card-title.complete-title,
 h3.card-title.refund-title,
-h3.proccessing-title,
+h3.processing-title,
 h3.card-title.canceled-title {
   font-size: 18px;
   font-weight: bold;
 }
-.proccessing-title i {
+.processing-title i {
   color: #5dabed;
 }
 .canceled-title i {

@@ -43,11 +43,11 @@ class OrderList
 
     public function add_classes()
     {
-        require_once(ORD_LI_DIR . DIRECTORY_SEPARATOR . 'App/Dashboard/Menu.php');
-        require_once(ORD_LI_DIR . DIRECTORY_SEPARATOR . 'App/Order/Complete.php');
-        require_once(ORD_LI_DIR . DIRECTORY_SEPARATOR . 'App/Order/Refunded.php');
-        require_once(ORD_LI_DIR . DIRECTORY_SEPARATOR . 'App/Order/Failed.php');
-        require_once(ORD_LI_DIR . DIRECTORY_SEPARATOR . 'App/Order/Proccessing.php');
+        require_once(ORD_LI_DIR  . 'App/Dashboard/Menu.php');
+        require_once(ORD_LI_DIR  . 'App/Order/Complete.php');
+        require_once(ORD_LI_DIR  . 'App/Order/Refunded.php');
+        require_once(ORD_LI_DIR  . 'App/Order/Failed.php');
+        require_once(ORD_LI_DIR  . 'App/Order/processing.php');
     }
 
     public function add_style()
