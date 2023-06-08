@@ -6,11 +6,11 @@ Description: This plugin allows you to have own orders list to show
 Author: Parsa Mirzaie
 Version: 1.0.0
 Author URI: https://eskanogroup.ir
-Text Domain: wc-order-list
+Text Domain: order_list
 License: GPL2
 Developers => 
           Parsa Mirzaie -> PHP Developer : https://github.com/Parsa-mrz/
-          Masih Balali =>  Frontend Developer : https://github.com/Masih-balali
+          Masih Balali =>  Frontend Developer : https://github.com/Masihbalali
 
 */
 defined('ABSPATH') || exit;
