@@ -2,7 +2,6 @@
 WordPress plugin allow you to display status order list for your user and also you can show number of each status with shortcode.
 
 
-
 <h1> UI </h2>
 
 
